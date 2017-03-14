@@ -1,0 +1,15 @@
+#Mute volume
+"pamixer --toggle-mute"
+    Mod4 + m
+
+# Decrease volume
+"pamixer --decrease 5; pkill -RTMIN+1 i3blocks"
+   XF86AudioLowerVolume
+"pamixer --decrease 5; pkill -RTMIN+1 i3blocks"
+   Mod4 + comma
+
+# Decrease volume
+"pamixer --decrease 5; pkill -RTMIN+1 i3blocks"
+   XF86AudioRaiseVolume
+"pamixer --increase 5; pkill -RTMIN+1 i3blocks"
+   Mod4 + period

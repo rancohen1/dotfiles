@@ -56,6 +56,7 @@ plugins=(git zsh-completions)
 source $ZSH/oh-my-zsh.sh
 alias vim=nvim
 alias mono-debug="mono --debug --debugger-agent=transport=dt_socket,server=y,address=127.0.0.1:55555"
+alias code="LD_LIBRARY_PATH="/opt/dotnet/shared/Microsoft.NETCore.App/1.1.1' code'
 
 # User configuration
 
@@ -86,6 +87,7 @@ alias mono-debug="mono --debug --debugger-agent=transport=dt_socket,server=y,add
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# nvm
 # https://github.com/creationix/nvm/issues/539#issuecomment-245791291
 #
 [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
@@ -94,3 +96,6 @@ alias node='unalias node ; unalias npm ; nvm use default ; node $@'
 alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
+
+# chruby
+source /usr/share/chruby/chruby.sh

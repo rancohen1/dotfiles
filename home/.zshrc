@@ -55,6 +55,7 @@ plugins=(git zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 alias vim=nvim
+alias mono-debug="mono --debug --debugger-agent=transport=dt_socket,server=y,address=127.0.0.1:55555"
 
 # User configuration
 

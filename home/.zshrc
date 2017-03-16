@@ -84,4 +84,12 @@ alias vim=nvim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /usr/share/nvm/init-nvm.sh
+
+# https://github.com/creationix/nvm/issues/539#issuecomment-245791291
+#
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
+alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
+source /usr/share/nvm/bash_completion
+source /usr/share/nvm/install-nvm-exec

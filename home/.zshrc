@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/ran/.oh-my-zsh
+export ZSH=/home/ran/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,8 +55,6 @@ plugins=(git zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 alias vim=nvim
-alias mono-debug="mono --debug --debugger-agent=transport=dt_socket,server=y,address=127.0.0.1:55555"
-alias code="LD_LIBRARY_PATH="/opt/dotnet/shared/Microsoft.NETCore.App/1.1.1' code'
 
 # User configuration
 
@@ -90,12 +88,16 @@ alias code="LD_LIBRARY_PATH="/opt/dotnet/shared/Microsoft.NETCore.App/1.1.1' cod
 # nvm
 # https://github.com/creationix/nvm/issues/539#issuecomment-245791291
 #
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
-alias node='unalias node ; unalias npm ; nvm use default ; node $@'
-alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
+source /usr/share/nvm/init-nvm.sh
+#alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+#alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
 # chruby
-source /usr/share/chruby/chruby.sh
+#source /usr/share/chruby/chruby.sh
+alias kc=kubectl
+
+# Used to be the last session
+#[ -z $TMUX ] && tmux new -c `tmux ls -F '#{pane_current_path}'  | tail -n1 || echo $HOME`
+#[ -z $TMUX ] && tmux new -c `tmux list-windows -F '#{pane_current_path}'  | tail -n1 || echo $HOME`
+[ -z $TMUX ] && tmux new -c `(tmux list-windows -F '#{pane_current_path}' 2>/dev/null || echo $HOME)  | tail -n1`
+

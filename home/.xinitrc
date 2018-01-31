@@ -48,4 +48,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+setxkbmap -layout us,il -option grp:lalt_lshift_toggle,caps:escape
+xbindkeys
 exec i3

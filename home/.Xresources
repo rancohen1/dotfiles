@@ -2,7 +2,7 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-! Xft.dpi:                    100
+! Xft.dpi:                    200
 Xft.antialias:              true
 Xft.rgba:                   rgba
 Xft.hinting:                true
@@ -19,7 +19,7 @@ URxvt.depth:                32
 URxvt.internalBorder:       3
 
 ! Fonts
-URxvt*font: xft:DejaVuSansMonoforPowerline Nerd Font:pixelsize=15
+URxvt*font: xft:DejaVuSansMonoforPowerline Nerd Font:size=13
 
 ! Fix font space
 URxvt*letterSpace: -1

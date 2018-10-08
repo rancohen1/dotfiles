@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ran/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -54,7 +54,7 @@ ZSH_THEME="simple"
 plugins=(git zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
-alias vim=nvim
+# alias vim=nvim
 
 # User configuration
 
@@ -88,13 +88,14 @@ alias vim=nvim
 # nvm
 # https://github.com/creationix/nvm/issues/539#issuecomment-245791291
 #
-source /usr/share/nvm/init-nvm.sh
+#export NVM_LAZY_LOAD=true
+source /usr/share/nvm/init-nvm.sh --no-use
 #alias node='unalias node ; unalias npm ; nvm use default ; node $@'
 #alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
 # chruby
 #source /usr/share/chruby/chruby.sh
-alias kc=kubectl
+#alias kc=kubectl
 
 # Used to be the last session
 #[ -z $TMUX ] && tmux new -c `tmux ls -F '#{pane_current_path}'  | tail -n1 || echo $HOME`

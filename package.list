@@ -1,4 +1,4 @@
-Please avoid running yay as root/sudo.
+acpi
 alsa-utils
 ammonite
 autoconf
@@ -8,16 +8,22 @@ bash
 bat
 binutils
 bison
+bluez
+bluez-utils
 bzip2
 chromium
 coreutils
+cpupower
 cryptsetup
 device-mapper
 dhcpcd
+dialog
 diffutils
 docker
 docker-compose
 e2fsprogs
+emacs
+evince
 fakeroot
 feh
 file
@@ -38,6 +44,7 @@ gptfdisk
 grep
 groff
 gzip
+htop
 httpie
 hub
 i3-gaps
@@ -48,6 +55,7 @@ iproute2
 iputils
 iw
 jfsutils
+jq
 less
 libtool
 licenses
@@ -67,13 +75,22 @@ ntfs-3g
 ntp
 nvm
 openssh
+openvpn
 pacman
+pamixer
+pandoc
 patch
+pavucontrol
 pciutils
 perl
 pkgconf
 procps-ng
 psmisc
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+python2
+redshift
 refind-efi
 reiserfsprogs
 robo3t-bin
@@ -85,6 +102,7 @@ sbt
 scala
 sed
 shadow
+skypeforlinux-stable-bin
 sudo
 sysfsutils
 systemd
@@ -92,6 +110,7 @@ systemd-sysvcompat
 tar
 terraform
 texinfo
+texlive-core
 tig
 tmux
 tree
@@ -161,6 +180,8 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xterm
+yarn
 yay
+zip
 zsh
 zsh-completions

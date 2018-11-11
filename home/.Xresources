@@ -19,7 +19,7 @@ URxvt.depth:                32
 URxvt.internalBorder:       3
 
 ! Fonts
-URxvt*font: xft:DejaVuSansMonoforPowerline Nerd Font:size=13
+URxvt*font: xft:DejaVuSansMono Nerd Font:size=13
 
 ! Fix font space
 URxvt*letterSpace: -1
